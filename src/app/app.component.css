@@ -1,0 +1,148 @@
+.app-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d6d7da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-container {
+    /* height: 90vh;
+    width: 90vw; */
+    height: 85vh;
+    width: 65vw;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left-container {
+    background-color: #ffffff;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+    flex: 3;
+}
+
+.right-container {
+    /* background-color: gray; */
+    background-color: #f6f6f8;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    flex: 7;
+}
+
+
+body{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for screens with a width of 768px or less (e.g., tablets and smaller) */
+@media (max-width: 768px) {
+    .weather-container {
+        flex-direction: column; /* Stack containers vertically */
+    }
+
+    .left-container,
+    .right-container {
+        width: 100%; /* Take up the full width of the screen */
+        border-radius: 0; /* Remove rounded corners */
+    }
+}
+
+/* Media query for screens with a width of 992px or less (e.g., medium-sized desktops) */
+@media (max-width: 992px) {
+    .weather-container {
+        width: 95%; /* Reduce the container width */
+    }
+}
+
+/* Media query for screens with a width of 1200px or less (e.g., large desktops) */
+@media (max-width: 1200px) {
+    .weather-container {
+        width: 90%; /* Further reduce the container width */
+    }
+}
+@media ((max-width:480px) and (min-width:320px)){
+
+    .left-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+
+    .right-container{
+        scroll-behavior: auto;
+        margin-top: 20px;
+        display: flex;
+       flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV 
+
+
+
+*/

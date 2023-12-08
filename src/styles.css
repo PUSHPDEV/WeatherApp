@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+/* :root {
+    --blue-1: #3C429E;
+    --blue-2: #4C52AD;
+    --yellow: #FAC742;
+    --white: #FFF;
+    --gray-1: #EDEDE;
+    --shadow-dark: rgba(0, 0, 0, 0.3);
+    --shadow-light: rgba(255, 255, 255, 0.1);
+
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div::selection {
+    color: red;
+}
