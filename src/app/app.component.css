@@ -34,7 +34,7 @@
 }
 
 
-body{
+body {
     scroll-behavior: smooth;
 }
 
@@ -48,101 +48,131 @@ body{
 
 
 
-
-
-
-
-
-
-
-/* Media query for screens with a width of 768px or less (e.g., tablets and smaller) */
+/* Mobile View */
 @media (max-width: 768px) {
     .weather-container {
-        flex-direction: column; /* Stack containers vertically */
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
     }
 
     .left-container,
     .right-container {
-        width: 100%; /* Take up the full width of the screen */
-        border-radius: 0; /* Remove rounded corners */
+        width: 100%;
+        border-radius: 0;
+        flex: none;
+    }
+
+    .right-container-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-tabs {
+        margin-left: 0;
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .navbar-metric {
+        margin-right: 0;
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .right-container-data-box {
+        margin: 10px;
+    }
+
+    .right-container-week-cards,
+    .right-container-today-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .right-container-todays-highlight-cards {
+        flex-direction: column;
+    }
+
+    .right-container-todays-highlight-card {
+        width: 100%;
+        margin: 10px 0;
     }
 }
 
-/* Media query for screens with a width of 992px or less (e.g., medium-sized desktops) */
-@media (max-width: 992px) {
+/* Tablet View */
+@media (min-width: 769px) and (max-width: 1024px) {
     .weather-container {
-        width: 95%; /* Reduce the container width */
+        width: 85vw;
+        height: auto;
+    }
+
+    .right-container-data-box {
+        margin: 20px;
+    }
+
+    .right-container-week-cards,
+    .right-container-today-cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 45%;
+        margin: 5px;
+    }
+
+    .right-container-todays-highlight-cards {
+        flex-wrap: wrap;
+    }
+
+    .right-container-todays-highlight-card {
+        width: 45%;
+        margin: 5px;
     }
 }
 
-/* Media query for screens with a width of 1200px or less (e.g., large desktops) */
-@media (max-width: 1200px) {
+/* Desktop View */
+@media (min-width: 1025px) {
     .weather-container {
-        width: 90%; /* Further reduce the container width */
+        width: 65vw;
     }
-}
-@media ((max-width:480px) and (min-width:320px)){
 
-    .left-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .right-container-data-box {
         margin: 30px;
     }
 
-    .right-container{
-        scroll-behavior: auto;
-        margin-top: 20px;
-        display: flex;
-       flex-direction: column;
+    .right-container-week-cards,
+    .right-container-today-cards {
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        width: 75px;
+        margin: 0 5px;
+    }
+
+    .right-container-todays-highlight-cards {
+        flex-wrap: nowrap;
+    }
+
+    .right-container-todays-highlight-card {
+        width: 180px;
+        margin: 10px;
     }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 
-
-
 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
 769px — 1024px: Small screens, laptops
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV 
 
-
-
 */
+

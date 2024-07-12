@@ -31,7 +31,7 @@ export class WeatherService {
   todaysHighlight?: TodaysHighlight;// For the right container data
 
   // Variables to be used for API calls
-  cityName: string = 'Mumbai'
+  cityName: string = 'Prayagraj'
   language: string = 'en-US'
   date: string = '20200622';
   units: string = 'm'

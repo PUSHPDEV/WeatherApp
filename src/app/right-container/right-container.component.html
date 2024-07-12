@@ -33,7 +33,7 @@
             <div class="card" *ngFor="let card of weatherService.weekData ">
                 <div class="card-day">{{card.day}}</div>
                 <div class="card-temp-img"><img src={{card.summaryImage}} alt=""></div>
-                <div class="card-temp-value"><span class="temp-max">{{this.weatherService.celsius == true ? card.tempMax : this.weatherService.celsiusToFahrenheit(card.tempMax)}}° </span><span class="temp-min"> {{ this.weatherService.celsius == true ?  card.tempMin : this.weatherService.celsiusToFahrenheit(card.tempMin)}}°</span></div>
+                <div class="card-temp-value"><span class="temp-max">{{this.weatherService.celsius == true ? card.tempMax : this.weatherService.celsiusToFahrenheit(card.tempMax)}}° </span>/<span class="temp-min"> {{ this.weatherService.celsius == true ?  card.tempMin : this.weatherService.celsiusToFahrenheit(card.tempMin)}}°</span></div>
             </div>
 
         </div>
